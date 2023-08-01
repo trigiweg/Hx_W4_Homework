@@ -1,0 +1,162 @@
+.footer{
+  background: #AA0601;
+  padding-top: 60px;
+  padding-bottom: 32px; 
+}
+
+//pc版本時隱藏，等手機版本時再顯示
+.menu_left{
+  display: none;
+}
+ 
+.footer_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_top img{
+  width: 48px;
+  height: 48px; 
+}
+.menu_r_mr{
+  margin-right: 32px;
+}
+ .mr-32{
+  margin-right: 32px;
+ }
+ .mb-32{
+  margin-bottom: 32px;
+ }
+ .mr-48{
+  margin-right: 48px;
+ }
+
+.footer .menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .menu li a{
+  color: #FFFFFF;
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center; 
+  padding-right: 48px; 
+}
+
+.footer_mid{
+  margin-bottom: 32px;
+}
+
+.footer_mid_item2{
+  display: flex;
+  align-items: center;
+}
+
+.footer_mid_item1 h2, .footer_mid_item2 h2{
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.footer_bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_bottom h2{
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer_bottom_r{
+  display: flex;
+}
+
+.hr1{
+  margin-bottom: 32px;
+}
+  
+.footer-phone, .footer-mail {
+  font-size: 36px; 
+  margin-right: 10px;
+  color: white; 
+}
+
+@media (max-width: 992px) {
+  .menu_r_mr{
+    margin-right: 16px;
+  }
+
+  .footer .menu li a{ 
+    padding-right: 32px; 
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-phone, .footer-mail {
+    font-size: 20px;
+    margin-right: 10px; 
+  }
+  .footer{
+    background: #AA0601;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 14px;
+  }
+  //pc版本時顯示，手機版本時再隱藏
+  .footer_mid_item1{
+    display: none;
+  }
+  //pc版本時隱藏，手機版本時再顯示
+  .footer_top .menu_left{
+    display: flex;
+  }
+
+  .footer_top .menu_left h2{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+
+  .footer_top .menu{
+    display: none;
+  }
+  
+  .footer_top img{
+    width: 24px;
+    height: 24px; 
+  }
+
+  .footer_mid{
+    margin-bottom: 24px;
+  }
+ 
+
+  .footer_mid_item2 h2{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .menu_r_mr{
+    margin-right: 8px;    
+  }
+   
+  .footer_bottom{
+    display: block;
+    // justify-content: space-between;
+  }
+  .footer_bottom_r{
+    display:block;
+  }
+  .hr1{
+    margin-bottom: 16px;
+  }
+}
