@@ -19,7 +19,7 @@
 
     <%- include('./layout/header'); -%>
     
-    <div class="container location_content"> 
+    <div class="container all_content"> 
       <h2>門市據點</h2>
       <div class="choose-locat">
         <h3>選擇分店</h3>
@@ -27,39 +27,41 @@
           <option value="台北中山旗艦店">台北中山旗艦店</option> 
         </select>
       </div>
-      <div class="locat-detail">
-        <div class="locat-desc">
-          <img src="../assets/images/store-1.png" alt="">
-          <li>
-            <h4>台北中山旗艦店</h4>
-          </li>
-          <li>
-            <div class="do-flex">
-              <span class="material-icons-outlined">
-                call
-              </span>
-              <p>電話：(02)000-1234</p>
-            </div>
-            
-            <div class="do-flex">
-              <span class="material-icons-outlined">
-                schedule
-                </span>
-              <p>營業時間：10:00-21:00</p>
-            </div>
-  
-            <div class="do-flex"> 
-              <span class="material-icons-outlined">
-                place
-                </span>
-              <p>地址：台北市中山區南京東路25巷2-1號</p>
-            </div>
-          </li>
-          
 
-          
+      <div class="do-flex">
+        <div class="locat-desc">
+            <img src="../assets/images/store-1.png" alt="">
+
+            <div class="locat-detail">
+              <li class="pt-8 pb-8">
+                <h4>台北中山旗艦店</h4>
+              </li>
+              <li class="pt-16 pb-16">
+                <div class="do-flex mb-8">
+                  <span class="material-icons-outlined mr-8">
+                    call
+                  </span>
+                  <p>電話：(02)000-1234</p>
+                </div>
+                
+                <div class="do-flex mb-8">
+                  <span class="material-icons-outlined mr-8">
+                    schedule
+                    </span>
+                  <p>營業時間：10:00-21:00</p>
+                </div>
+      
+                <div class="do-flex"> 
+                  <span class="material-icons-outlined mr-8">
+                    place
+                    </span>
+                  <p>地址：台北市中山區南京東路25巷2-1號</p>
+                </div>
+              </li>
+          </div> 
         </div>
 
+        <img class="img-googlemap" src="../assets/images/googlemap.png" alt="">
       </div>
       <!-- <h4>Q1.請問可否自備鏡框單配鏡片？</h4>
       <p>A1.我牌鏡框搭配薄型非球面鏡片 1480 元，搭配功能型鏡片則依鏡片種類加價購買。</p>
