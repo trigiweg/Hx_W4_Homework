@@ -16,16 +16,20 @@
     }
 }
 
-.locat-desc{ 
-    img{
-        width: 526px;
-        height: 224px;
-    }
-    margin-right: 24px;
+.mid-content {
+    display: flex;
 }
 
-.locat-detail{
-    width: 526px; 
+.locat-desc{  
+    img{
+        width: 100%;
+        max-width: 526px;  
+    }
+    margin-right: 24px;
+    max-width: 49%;
+}
+
+.locat-detail{ 
     h4{
         font-size: 24px; 
     }
@@ -50,48 +54,51 @@
 }
 
 .img-googlemap{
-    width: 746px;
-    height: 414px;
+    width: 51%; 
+    height: 414px; 
 }
- 
-// .qa_content h4{
-//     font-size: 20px;
-//     line-height: 1.5;
-//     font-weight: bold; 
-//     margin-bottom: 8px;
-// }
- 
-// .qa_content p{
-//     font-size: 16px;
-//     line-height: 1.5; 
-// }
+  
+@media (max-width: 992px) { 
+     .locat-desc{
+        display: flex;
+        margin-right: 0px; 
+        margin-bottom: 24px;
+        width: 100%;
+        max-width: 100%;
+        img{
+            max-width: 526px; 
+            width: 100%;
+            margin-right: 24px; 
+        }
+     }
+    
+     .mid-content{
+        flex-wrap: wrap; 
+     } 
 
-// .ans_gap{
-//     margin-bottom: 32px;
-// }
+     .img-googlemap{
+        width: 100%;   
+        img{
+            width: 100%;
+        }
+    }
+}
 
-// @media (max-width: 992px) { 
-//     .qa_content{
-//         padding-top: 80px; 
-//     }
-// }
-
-// @media (max-width: 767px) {
-//     .qa_content{
-//         padding-top: 40px;
-//         padding-bottom: 64px;
-//         padding-left: 16px;
-//             padding-right: 14px;
-//     } 
-//     .qa_content h2{
-//         font-size: 24px;
-//         line-height: 1.5;
-//         font-weight: bold;
-//         border-left: 8px #9F1213 solid;
-//         margin-bottom: 24px;
-//     }
-        
-//     .ans_gap{
-//         margin-bottom: 24px;
-//     }
-// }
+@media (max-width: 795px) {
+    .all_content{
+        padding-left: 16px;
+        padding-right: 14px;
+    }
+    .locat-desc{
+        width: 100%;
+        flex-wrap: wrap;
+        img{
+            max-width:100%;
+            width: 100%;
+            margin-right: 0px; 
+        }
+    }  
+    .locat-detail{
+        width: 100%;   
+    }
+}
